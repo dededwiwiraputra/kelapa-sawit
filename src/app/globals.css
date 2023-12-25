@@ -11,6 +11,10 @@
   color: #2C3D94;
 }
 
+.pl-custom {
+  padding-left: 100px;
+}
+
 .bg-tcp1 {
   background-color: #F3F4FF;
 }
@@ -19,6 +23,14 @@
   background-color: #2C3D94;
 }
 
+.active-button {
+  background-color: #F7C32B;
+}
+
 .border-primary {
   border-color: #2C3D94;
+}
+
+.border-secondary {
+  border-color: #F7C32B;
 }
