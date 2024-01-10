@@ -1,0 +1,7 @@
+{
+    "discord.removeLowerDetails": false,
+    "discord.removeRemoteRepository": true,
+    "discord.lowerDetailsIdling": "",
+    "discord.detailsIdling": "Break Time!",
+    "discord.largeImageIdling": "Coffe!"
+}

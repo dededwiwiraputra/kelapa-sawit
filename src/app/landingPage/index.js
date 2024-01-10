@@ -32,7 +32,7 @@ const LandingPage = () => {
                       Discover a world of innovation and excellence with our
                       latest product. We've redefined what's possible, bringing
                       you cutting-edge technology that enhances your life in
-                      ways you never thought possible.
+                      ways you never thought possible.25
                     </p>
                   </div>
                 </PageWrapper>

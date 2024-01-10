@@ -7,7 +7,6 @@ const Form_Register = () => {
   const [password, setPassword] = useState('');
 
   const handleregis = () => {
-    // Handle login logic here
     console.log('Register in with:', email, password);
   };
 
@@ -48,8 +47,8 @@ const Form_Register = () => {
             placeholder='Password'
             required
           />
-        <Link href="/">
-          <p className='className="block pt-2 pl-2 text-white text-sm font-medium mb-2"'>Have an Account?</p>
+        <Link href={"/login"}>
+          <p className='block pt-2 pl-2 text-white text-sm font-medium mb-2 hover:underline'>Have an Account?</p>
         </Link>
         </div>
         <button

@@ -49,7 +49,7 @@ const Form_Login = () => {
             required
           />
         <Link href="/">
-          <p className='className="block pt-2 pl-2 text-white text-sm font-medium mb-2"'>Forget Password?</p>
+          <p className='block pt-2 pl-2 text-white text-sm font-medium mb-2 hover:underline'>Forget Password?</p>
         </Link>
         </div>
         <button
