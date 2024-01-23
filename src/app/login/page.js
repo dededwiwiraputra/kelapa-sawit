@@ -1,6 +1,5 @@
 "use client";
 
-
 import Image from "next/image";
 import PageWrapper from "../../../components/pageWrapper";
 import Form_Login from "../../../components/login/form_login";
@@ -13,7 +12,7 @@ const page = () => {
       <PageWrapper>
         <div id="jumbotron" className="">
           <div className="container mx-auto">
-            <div className="grid grid-cols-2 gap-4"> 
+            <div className="grid grid-cols-2 gap-4">
               <div className="col-span-1">
                 <div className="min-h-screen flex items-center justify-center">
                   <Form_Login />

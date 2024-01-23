@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -24,18 +23,16 @@ const Navbar_Dashboard = () => {
                 <p className="text-base md:text-xl font-bold text-white">
                   Sistem Deteksi Hama Ganoderma
                 </p>
-                <p className='text-white font-semi pl-custom'>
-                  (SistekHaGano)
-                </p>
+                <p className="text-white font-semi pl-custom">(SistekHaGano)</p>
               </Link>
             </div>
             <div className="hidden lg:flex basis-1/2 justify-end">
-              <ul className="flex items-center">
+              <ul className="flex items-center text-center">
                 <div>
                   <li className="mx-8">
                     <Link
                       href="#Klasifikasi"
-                      className="font-bold text-[21px] text-primary py-3 px-20 rounded-[15px] active-button"
+                      className="font-bold text-[18px] text-primary py-3 px-20 rounded-[15px] active-button"
                     >
                       Klasifikasi
                     </Link>
@@ -45,7 +42,7 @@ const Navbar_Dashboard = () => {
                   <li className="mx-8">
                     <Link
                       href="#klasifikasi"
-                      className="font-semibold text-[21px] text-white"
+                      className="font-semibold text-[18px] text-white"
                     >
                       Riwayat Klasifikasi
                     </Link>
@@ -55,7 +52,7 @@ const Navbar_Dashboard = () => {
                   <li className="mx-8">
                     <Link
                       href="#PenularanPenyakit"
-                      className="font-semibold text-[21px] text-white ml-10 text-center"
+                      className="font-semibold text-[18px] text-white text-center"
                     >
                       Penularan Penyakit
                     </Link>
@@ -63,10 +60,9 @@ const Navbar_Dashboard = () => {
                 </div>
                 <div>
                   <li className="mx-8">
-                    
                     <Link
                       href={"/register"}
-                      className="font-semibold text-[21px] text-white"
+                      className="font-semibold text-[18px] text-white"
                     >
                       Administrator
                     </Link>
@@ -79,7 +75,8 @@ const Navbar_Dashboard = () => {
                       src="/ic_Account.png"
                       width={25}
                       height={25}
-                      className=""/>
+                      className=""
+                    />
                   </li>
                 </div>
               </ul>
@@ -121,7 +118,8 @@ const Navbar_Dashboard = () => {
               </Link>
             </li>
             <li className="flex justify-center items-center my-8">
-              <Link href={"/"}
+              <Link
+                href={"/"}
                 className="font-semibold text-white text-center text-lg"
               >
                 Administrator
@@ -131,7 +129,7 @@ const Navbar_Dashboard = () => {
         </div>
       )}
     </>
-  )
-}
+  );
+};
 
-export default Navbar_Dashboard
+export default Navbar_Dashboard;
