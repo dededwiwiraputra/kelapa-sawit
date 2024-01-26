@@ -2,9 +2,10 @@
 
 import React from "react";
 import PageWrapper from "../../../components/pageWrapper";
-import Navbar from "../../../components/navbar";
+import Navbar from "../../../components/navbar/navbar";
 import Footer from "../../../components/footer";
-import Card_carousel_1 from "../../../components/card_carousel_1";
+import Card_carousel_1 from "../../../components/card/card_carousel_1";
+import Image_display from "../../../components/image_display";
 import Image from "next/image";
 
 const LandingPage = () => {
@@ -39,13 +40,7 @@ const LandingPage = () => {
               </div>
               <div className="basis-1/2">
                 <PageWrapper>
-                  <Image
-                    src="/example_1.jpg"
-                    alt=""
-                    className="object-cover h-full w-full"
-                    width={700}
-                    height={500}
-                  />
+                  <Image_display/>
                 </PageWrapper>
               </div>
             </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import PageWrapper from "./pageWrapper";
-import HoverLink from "./hoverLink";
+import PageWrapper from "../pageWrapper";
+import HoverLink from "../hoverLink";
 
 const Card_carousel_1 = () => {
   return (
