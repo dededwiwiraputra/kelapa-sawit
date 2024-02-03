@@ -1,19 +1,15 @@
-
 "use client";
 
-import React from 'react'
+import React from "react";
 import Image from "next/image";
 
-import Navbar_Dashboard from '../../../components/dashboard/navbar_dashboard'
-import PageWrapper from '../../../components/pageWrapper'
+import Navbar_Dashboard from "../../../components/dashboard/navbar_dashboard";
+import PageWrapper from "../../../components/pageWrapper";
 
-
-const page = () => {
+const Page = ({ resultImage }) => {
   return (
     <>
-      <Navbar_Dashboard/>
-      
-      
+      <Navbar_Dashboard />
 
       {/*Table Section*/}
       <PageWrapper>
@@ -24,10 +20,10 @@ const page = () => {
                 Hasil Klasifikasi
               </p>
             </div>
-            <div className='flex justify-center'>
-            <PageWrapper>
+            <div className="flex justify-center">
+              <PageWrapper>
                 <Image
-                  src="/example_1.jpg"
+                  src={resultImage}
                   alt=""
                   className=""
                   width={450}
@@ -80,9 +76,8 @@ const page = () => {
           </div>
         </div>
       </PageWrapper>
-
     </>
-  )
-}
+  );
+};
 
-export default page
+export default Page;

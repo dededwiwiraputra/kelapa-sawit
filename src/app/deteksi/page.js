@@ -1,12 +1,12 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
+import React, { useEffect } from "react";
 import PageWrapper from "../../../components/pageWrapper";
 import Navbar_Dashboard from "../../../components/dashboard/navbar_dashboard";
-import DragAndDrop from "../../../components/dashboard/dragAndDrop";
+import DragAndDrop from "../../../components/upload/dragAndDrop";
+import { redirect } from "next/navigation";
 
-const page = () => {
+export default function page() {
   return (
     <div className="">
       <Navbar_Dashboard />
@@ -28,6 +28,4 @@ const page = () => {
       </PageWrapper>
     </div>
   );
-};
-
-export default page;
+}

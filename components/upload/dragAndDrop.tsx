@@ -1,6 +1,8 @@
 "use client";
 
 import { useRef, useState } from "react";
+import ApiPredict from "./apiPredict";
+
 export default function DragAndDrop() {
   const [dragActive, setDragActive] = useState<boolean>(false);
   const inputRef = useRef<any>(null);
@@ -18,33 +20,7 @@ export default function DragAndDrop() {
   }
 
   const handleSubmitFile = async () => {
-    // Create a FormData object to append files
-    const formData = new FormData();
-
-    // Append each selected file to the FormData object
-    files.forEach((file: File) => {
-      formData.append("file", file);
-    });
-
-    try {
-      // Send a POST request to the API endpoint
-      const response = await fetch("http://server.sistekhagano.org/predict", {
-        method: "POST",
-        body: formData,
-      });
-
-      // Check if the request was successful (status code 200)
-      if (response.ok) {
-        // Handle the successful response (e.g., show a success message)
-        console.log("Files uploaded successfully!");
-      } else {
-        // Handle the error response (e.g., show an error message)
-        console.error("Failed to upload files");
-      }
-    } catch (error) {
-      // Handle any network or other errors
-      console.error("An error occurred:", error);
-    }
+    await ApiPredict.uploadFiles(files);
   };
 
   function handleDrop(e: any) {
@@ -111,7 +87,7 @@ export default function DragAndDrop() {
               type="file"
               multiple={true}
               onChange={handleChange}
-              accept=".jpg, .jpeg, .tiff"
+              accept=".jpg, .jpeg, .tif"
             />
 
             <p className="text-xl font-bold">
